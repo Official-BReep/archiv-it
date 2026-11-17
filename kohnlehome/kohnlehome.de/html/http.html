@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>HTTP</title>
+	<style>
+		section {
+			background-color: beige;
+			padding: 0.3em;
+			margin: 0.3em;
+		}
+	</style>
+</head>
+<body>
+	<h1>Kommunikation zwischen Browser und Webserver per HTTP</h1>
+	<section>
+		<h2>Link</h2>
+		<p><a href="antwort.txt">Link zur Datei antwort.txt</a></p>
+	</section>
+
+	<section>
+	<h2>Formular</h2>
+	<h3>Formular mit GET</h3>
+	<form action="antwort.txt">
+  		<input id="inputGet" type="text" name="name">
+  		<input type="submit" value="Senden">
+	</form>
+
+	<h3>Formular mit POST</h3>
+	<form action="antwort.txt" method="post">
+  		<input id="inputPost" type="text" name="name">
+  		<input type="submit" value="Senden">
+	</form>
+	</section>
+
+	<section>
+	<h2>JavaScript</h2>
+	<h3>AJAX (XMLHttpRequest)</h3>
+	<p><button id="button">Senden</button></p>
+	<script>	
+	let request;
+	let senden = function(){
+		request = new XMLHttpRequest();
+		request.open('GET', 'antwort.txt', true);
+		request.send();
+		
+		request.onreadystatechange = function(){
+			if(request.readyState === 4){  // DONE
+				var antwort = request.responseText;
+				alert(antwort);
+			}
+		}	
+	};
+
+	let button = document.getElementById('button');
+	button.addEventListener('click', senden, false);	
+	</script>
+
+	<h3>fetch API</h3>
+	<p><button id="button2">Senden</button></p>
+	<script>
+	function sendenMitFetch() {		
+		fetch('antwort.txt')
+        .then(function(response) {
+            return response.text();
+        })
+		.then(function(inhalt){
+			alert(inhalt);
+		});		
+	}
+	let button2 = document.getElementById("button2");
+	button2.addEventListener('click', sendenMitFetch, false);	
+	</script>
+	</section>
+</body>
+</html>
+

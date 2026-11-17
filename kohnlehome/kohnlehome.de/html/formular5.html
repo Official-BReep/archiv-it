@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">    
+    <title>HTML5-Formularelemente</title>
+</head>
+
+<body>
+    <h1>HTML5-Formularelemente</h1>
+    <form action="Skriptdatei.php">
+
+        <fieldset>
+            <legend>input type="search"</legend>
+            <input type="search" name="suche" placeholder="Bitte Text eingeben" />
+        </fieldset>
+
+
+        <fieldset>
+            <legend>input type="number"</legend>
+            <input type="number" name="nummer" min="0" max="100" value="30" step="10" />
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="text" inputmode="numeric" maxlength="3" pattern="[0-9]*"</legend>
+            <input type="text" inputmode="numeric" maxlength="3" pattern="[0-9]*" />
+        </fieldset>
+
+
+        <fieldset>
+            <legend>input type="range"</legend>
+            <input type="range" name="bereich" min="0" max="100" value="30" step="10" />
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="color"</legend>
+            <input type="color" name="farbe" value="#ff0000" />
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="tel"</legend>
+            <input type="tel" name="telefon" />
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="url"</legend>
+            <input type="url" name="url" />
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="email"</legend>
+            <input type="email" />
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="date"</legend>
+            <input type="date" name="datum" value="2011-12-13" />
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="month"</legend>
+            <input type="month" name="monat" value="2011-11" />
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="week"</legend>
+            <input type="week" value="2011-W49" />
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="time"</legend>
+            <input type="time" name="woche" value="13:32" />
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="datetime-local"</legend>
+            <input type="datetime-local" name="lokale-zeit" value="1996-01-01T12:05" />
+        </fieldset>
+
+
+        <fieldset>
+            <legend>submit </legend>
+            <input type="submit" value="Absenden" />
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

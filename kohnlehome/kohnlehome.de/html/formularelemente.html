@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="Übersicht über verschiedene HTML-Formularelemente: Textfelder, Checkboxen, Radiobuttons, ...">
+   <title>HTML-Formularelemente</title>
+</head>
+
+<body>
+   <h1>HTML-Formularelemente</h1>
+   <form>
+      <h2>Texteingabefelder</h2>
+      <fieldset>
+         <legend>&lt;input type="text"&gt;</legend>
+         <label for="inputText">Einzeiliger Text</label>
+         <input type="text" id="inputText">
+      </fieldset>
+
+      <fieldset>
+         <legend>&lt;textarea&gt;</legend>
+         <label for="textarea">Mehrzeiliger Text</label>
+         <textarea id="textarea"></textarea>
+      </fieldset>
+
+      <h2>Checkbox</h2>
+      <fieldset>
+         <legend>&lt;input type="checkbox"&gt;</legend>
+         <label for="checkbox">Aussage</label>
+         <input type="checkbox" id="checkbox">
+      </fieldset>
+
+      <h2>Radiobuttons</h2>
+      <fieldset>
+         <legend>&lt;input type="radio" name="gruppe"&gt;</legend>
+         <label for="radio1">Option 1</label>
+         <input type="radio" id="radio1" name="gruppe">
+         <label for="radio2">Option 2</label>
+         <input type="radio" id="radio2" name="gruppe">
+      </fieldset>
+
+      <h2>Dropdown-Menü</h2>
+      <fieldset>
+         <legend>&lt;select&gt;&lt;optgroup&gt;&lt;option&gt;</legend>
+         <label for="select">Auswahl</label>
+         <select id="select">
+            <optgroup label="Gruppe A">
+               <option>Option 1</option>
+               <option>Option 2</option>
+            </optgroup>
+            <optgroup label="Gruppe B">
+               <option>Option 3</option>
+               <option>Option 4</option>
+            </optgroup>
+         </select>
+      </fieldset>
+
+      <h2>Mehrfachauswahlliste</h2>
+      <fieldset>
+         <legend>&lt;select multiple="multiple"&gt;&lt;optgroup&gt;&lt;option&gt;</legend>
+         <label for="selectMultiple">Mehrfachauswahl</label>
+         <select id="selectMultiple" name="auswahl2" multiple="multiple">
+            <optgroup label="Gruppe A">
+               <option>Option 1</option>
+               <option>Option 2</option>
+            </optgroup>
+            <optgroup label="Gruppe B">
+               <option>Option 3</option>
+               <option>Option 4</option>
+            </optgroup>
+         </select>
+      </fieldset>
+
+      <h2>Slider</h2>
+      <fieldset>
+         <legend>&lt;input type="range" min="0" max ="10" step="2"&gt;</legend>
+         <label for="inputRange">Slider</label>
+         <input type="range" id="inputRange" min="0" max="10" step="2">
+      </fieldset>
+
+      <h2>Passworteingabefeld</h2>
+      <fieldset>
+         <legend>&lt;input type="password"&gt;</legend>
+         <label for="inputPassword">Passwort</label>
+         <input type="password" id="inputPassword">
+      </fieldset>
+
+      <h2>Eingabefelder mit speziellen Tastaturen</h2>
+      <fieldset>
+         <legend>&lt;input type="tel"&gt;</legend>
+         <label for="inputTel">Telefonnummer</label>
+         <input type="tel" id="inputTel">
+      </fieldset>
+
+      <fieldset>
+         <legend>&lt;input type="url"&gt;</legend>
+         <label for="inputUrl">Url</label>
+         <input type="url" id="inputUrl">
+      </fieldset>
+
+      <fieldset>
+         <legend>&lt;input type="email"&gt;</legend>
+         <label for="inputEmail">E-Mail</label>
+         <input type="email" id="inputEmail">
+      </fieldset>
+
+      <h2>Datum und Uhrzeit</h2>
+      <fieldset>
+         <legend>&lt;input type="date"&gt;</legend>
+         <label for="inputDate">Datum</label>
+         <input type="date" id="inputDate">
+      </fieldset>
+
+      <fieldset>
+         <legend>&lt;input type="month"&gt;</legend>
+         <label for="inputMonth">Monat</label>
+         <input type="month" id="inputMonth">
+      </fieldset>
+
+      <fieldset>
+         <legend>&lt;input type="week"&gt;</legend>
+         <label for="inputWeek">Woche</label>
+         <input type="week" id="inputWeek">
+      </fieldset>
+
+      <fieldset>
+         <legend>&lt;input type="time"&gt;</legend>
+         <label for="inputTime">Uhrzeit</label>
+         <input type="time" id="inputTime">
+      </fieldset>
+
+      <fieldset>
+         <legend>&lt;input type="datetime-local"&gt;</legend>
+         <label for="inputDateTime">Datum und Uhrzeit</label>
+         <input type="datetime-local" id="inputDateTime">
+      </fieldset>
+
+      <h2>Farbauswahl</h2>
+      <fieldset>
+         <legend>&lt;input type="color"&gt;</legend>
+         <label for="inputColor">Farbe</label>
+         <input type="color" id="inputColor">
+      </fieldset>
+
+      <h2>Dateipfadauswahl</h2>
+      <fieldset>
+         <legend>&lt;input type="file"&gt;</legend>
+         <label for="inputFile">Dateipfad</label>
+         <input type="file" id="inputFile">
+      </fieldset>
+
+      <h2>Buttons ohne Aktion</h2>
+      <fieldset>
+         <legend>&lt;button type="button"&gt;Beschriftung&lt;/button&gt;</legend>
+         <button type="button">Beschriftung</button>
+      </fieldset>
+
+      <fieldset>
+         <legend>&lt;input type="button" value="Beschriftung"&gt;</legend>
+         <input type="button" value="Beschriftung">
+      </fieldset>
+
+      <h2>Submit-Button</h2>
+      <fieldset>
+         <legend>&lt;input type="submit" value="Beschriftung"&gt;</legend>
+         <input type="submit" value="Beschriftung">
+      </fieldset>
+   </form>
+</body>
+
+</html>
